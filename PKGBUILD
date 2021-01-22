@@ -40,6 +40,7 @@ prepare() {
 
 build() {
   cd sleepyhead-code
+  export CXXFLAGS="$CXXFLAGS -fpermissive"
   ./configure
   make
 }
